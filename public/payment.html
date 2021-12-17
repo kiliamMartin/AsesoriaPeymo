@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="shortcut icon"  href="assets/images/favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <title>Pagos</title>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        
+
+        <script>
+            $(function(){
+               $('.header').load("navbar.html")
+               $('.footer').load("footer.html")
+               
+            });
+         </script>
+	
+    </head> 
+    <body>
+        <header class="header">
+            
+        </header>
+
+
+
+        <main class="main">
+            <div class="whatsapp-button">
+                <a href="#" ><img id="whatsapp-icon" src="assets/images/whatsapp.png"></a>
+            </div>
+
+
+                <div class="wrapper">
+                    <p id="title">Método de <b>Pago</b>
+
+
+
+                    <section id="payment">
+                            <div class="payment-container">
+                                <div class="subtitle">
+
+                                    <p id="sub_title">Cargo en cuenta</p>
+                                </div>
+                                <div class="default-container">
+
+                                    <input type="text" id="num_acount" name="num_acount" placeholder="Número de cuenta"><br>           
+                                    <input type="text" id="name_banck" name="name_banck" placeholder="Nombre del banco"><br>
+                                    <input type="text" id="name_user" name="name_user" placeholder="Nombre y apellidos"><br>
+                                    <button style="margin-bottom: 1em;margin-top: 8em;" id="button"><label>SUBIR CONFIRMACIÓN</label></button>
+                                   
+
+                                </div>
+                                <div class="send-data">
+                                    <button id="button"><label>ENVIAR DATOS</label></button> 
+                                </div>
+                                                       
+            
+                            </div>
+
+                
+                     
+                            <div class="payment-container">
+                                <div class="subtitle">
+                                    <p id="sub_title">Domicialización de recibo</p>
+                                </div>
+                                <div class="default-container">
+                                <input type="text" id="num_acount" name="num_acount" placeholder="Número de cuenta"><br>           
+                                <input type="text" id="name_banck" name="name_banck" placeholder="Nombre del banco"><br>
+                                <input type="text" id="name_user" name="name_user" placeholder="Nombre y apellidos"><br>
+                                <button style="margin-bottom: 1em;margin-top: 8em;" id="button"><label>SUBIR CONFIRMACIÓN</label></button>
+                            
+                                
+                                </div>
+                                <div class="send-data">
+                                    <button id="button"><label>ENVIAR DATOS</label></button> 
+                                </div>
+                            </div>
+
+             
+                        
+                            <div class="payment-container">
+                                <div class="subtitle">
+                                    <p id="sub_title">Transferencia bancaria</p>
+                                </div>
+                                <div class="default-container">
+                                     <br>
+                                    <br>
+                                    <br>
+                                    
+                                  
+                                    <h3 style="color: #054405;">Banco: </h3>
+                                    
+                                    <p id="messages">Caja Rural</p><br>
+                                
+
+                                    <h3 style="color: #054405;">IBAN: </h3>
+                                    <p id="messages">ES87 6426 0643 25 69401574</p><br>
+                                   
+                                    <button style="margin-bottom: 1em;margin-top: 6em;" id="button"><label>SUBIR CONFIRMACIÓN</label></button>
+                                
+                            
+                                  
+                                </div>
+                                <div class="send-data">
+                                    <button id="button"><label>ENVIAR DATOS</label></button> 
+                                </div>
+                        </div>
+
+
+             </section>     
+            </div>
+        </main>
+
+
+
+        <footer class="footer"></footer>
+
+
+</body>
+</html>
