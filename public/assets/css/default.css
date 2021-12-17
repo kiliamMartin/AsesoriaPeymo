@@ -1,0 +1,887 @@
+/* DEFAULT */
+*{
+    box-sizing: border-box;
+}
+header nav ul li:hover .children {
+	display:block;
+}
+header nav ul .submenu:hover a .bi-person-circle  {
+    color: white;
+}
+
+.bi-person-circle{
+ 
+    margin-right: 5px;
+}
+header nav ul li .children {
+	display: none;
+	background:white;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 25%);
+	position: absolute;
+    padding: 8px 8px;
+    border-radius: 3px;
+	width: auto;
+    text-align: left;
+	z-index:1000;
+}
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+    padding:8px 8px;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+header nav ul li .children li a {
+	display: block;
+}
+header nav ul li .children li a span {
+    margin-right: 8px;
+}
+h3 {
+    padding: 0;
+    height: 0px;
+}
+body{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+table {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    overflow: auto;
+}
+td {
+    font-size: 0.9em;
+    height: 70px;
+    border-bottom: 1px solid #a3a3a3;
+    overflow-x: auto;
+    
+}
+table th {
+    background-color: #C5D9C5;
+    border-bottom: 1px solid #a3a3a3;
+    overflow: auto;
+}
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    
+}
+table tr:nth-child(even) {
+    background-color: #e0e5da;
+   
+}
+p{
+    margin-bottom: 1.6em;
+}
+h1{
+    color: #054405;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+main{
+    width: 100%;
+    padding-top: 4em;
+ }
+button{
+    background-color: white;
+    color: #054405;
+    border-color: #054405;
+    padding: 10px 10px;
+    border-style: solid; 
+}
+ button label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+button p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* HOVER */
+button label:hover {
+    cursor: pointer;
+}
+button:hover {
+    background-color: #8b977e;
+    cursor: pointer;
+}
+#button_table:hover {
+    background-color: #8b977e;
+    cursor: pointer;
+}
+#information .button-container button:hover {
+    background-color: #8b977e;
+    cursor: pointer;
+}
+/* ID */
+#button_table{
+    background-color: white;
+    color: #054405;
+    border-color: #054405;
+    padding: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid; 
+    align-items: center;
+}
+#sub_title {
+    font-size: 25px;
+    color: #E8FFE5;
+    margin: 0;
+}
+#little {
+    font-size: 10px;
+}
+#user-icon{
+    vertical-align:-5.5px;
+    padding-right:0.2em ;
+ }
+ #services{
+    padding: 30px;
+}
+#services .wrapper{
+    padding:60px;
+    overflow: auto;
+}
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: #054405;
+    line-height: 1em;
+}
+#title-services{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: #054405;
+    line-height: 1em;
+    
+    
+}
+
+#rates{
+    background-color: #E8FFE5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+#entity{
+    background-color: #E8FFE5;
+    padding-top: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+#entity .button-container {
+   display: inline-block;
+   padding: 60px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: #054405;
+}
+
+
+
+#entity .button-container button{
+    margin: 2em;
+    border-color: white;
+    background-color:#054405 ;
+    color: white;
+}
+#entity .button-container button label a{
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+    font-size: 28px;
+}
+#note{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #054405;
+    font-weight: bold;
+    font-size: 18px;
+}
+  
+#rates .wrapper{
+   padding:60px;
+   overflow: auto;   
+}
+#contact{
+    display: flex;
+}
+#registration{
+    display: flex;
+    padding-top: 60px;
+    background-color: #E8FFE5 ;
+}
+   
+#form-index{
+    background-color: white;
+    overflow: hidden;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: flex;    
+    padding: 100px 0px;
+}
+#logo-form-container{
+    padding: 30px;
+    text-align: left;
+    margin: auto 0;
+    max-width: 200px;
+    height: fit-content;
+}
+#form-container{
+    padding: 0px 40px;
+}
+#form-container input[type=text], #message, #messages{
+    width:100%;
+    max-width: 650px;
+    padding: 8px 10px;
+    margin: 2em;
+    border: 0;
+    border-bottom: 2px solid #054405;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#messages {
+    max-width: 80%;
+    font-size: 16px;
+}
+#message{
+    margin: 2em;
+    resize: none;
+}
+#form-container label{
+    font-size: 14px;
+}
+#form-container input[type=checkbox]{
+    margin-left: 2em;
+    margin-bottom:1em;
+}
+#information{
+    padding:80px 70px;
+    overflow: hidden;
+    max-width: 2000px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    background-color: #054405;
+}
+#information #title{
+    color: white;
+    font-size: 38px;
+}
+#information .button-container button{
+    border-color: white;
+    background-color:#054405 ;
+    color: white;
+}
+#information p{
+    color: white;
+}
+#information-container{
+    width: 50%;
+    background-color: #054405;
+    padding:30px;
+}
+#registration-container{
+    width: 50%;
+    background-color: white;
+    padding: 4em;
+    border-radius: 5px;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+#form-container .button-container{
+    margin:3em;
+    
+}
+#wrapper-footer_white{
+    padding-bottom: 20px;
+    min-height: calc(100% - 20px);
+    position: relative;
+    background-color: white ;
+}
+#wrapper-footer{
+    padding-bottom: 20px;
+    min-height: calc(100% - 20px);
+    position: relative;
+    background-color: #E8FFE5 ;
+}
+#wrapper-footer-form{
+    padding-bottom: 20px;
+    min-height: calc(100% - 20px);
+    position: relative;
+}
+#footer-title{
+    font-weight: bold;
+ 
+}
+#footer-icon{
+    vertical-align:-7px;
+    margin-right: 6px;
+}
+#login{
+    background-color: #E8FFE5;
+    padding-top: 60px; 
+    
+    text-align: center;
+}
+#login .button-container{
+    padding: 2em 8em;
+}
+#forms{
+    background-color: #E8FFE5;
+    padding-top: 60px; 
+    text-align: center;
+    overflow: hidden;
+}
+
+#data{
+    background-color: #E8FFE5;
+    padding-top: 60px; 
+    text-align: center;
+    overflow: hidden;
+}
+#modify-data{
+    background-color: #E8FFE5;
+    padding-top: 60px; 
+    text-align: center;
+}
+#form-container .button-container button label{
+    font-size: large;
+}
+#payment {
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+/* CLASS */
+.main-rates{
+    padding-top: 2em;
+}
+.div_service {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 1em;
+    
+}
+.title_service_left {
+    float: left;
+    width: 20%;
+    height: 40px;
+}
+.letters_service_right {
+    float: right;
+    width: 80%;
+    height: 50px;
+}
+.title_service_right {
+    float: right;
+    width: 15%;
+    height: 40px;
+}
+.letters_service_left {
+    float: left;
+    width: 80%;
+    height: 100px;
+}
+.back_green {
+    background-color: #E8FFE5;
+}
+.left {
+    text-align: left;
+    align-items: left;
+}
+.center {
+    text-align: center;
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;     
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    
+}
+.container-bis{
+    max-width: 1300px;
+    margin: 0 auto;  
+    width: 100%;
+    padding: 0;   
+    
+    
+}
+.menu-icon{
+    display: none;
+}
+.checkbox-container{
+    text-align: left;
+    padding: 1em 1em;
+    margin-left: 1em;
+    
+}
+.checkbox-container p{
+    text-align: center;
+}
+
+.checkbox-container label{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+	
+.header{	
+    background-color: #C5D9C5;	
+    position: fixed;	
+    top:0;	
+    right: 0;	
+    left: 0;	
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);	
+    width: 100%;	
+    padding: 0;	
+    margin: 0;	
+}	
+.logo-container {	
+    display: flex;	
+    align-items: center;	
+    justify-content: space-between;	
+    text-align: center;	
+    padding: 0.5em;	
+    	
+ 	
+}	
+.nav{	
+   padding: 0;	
+   width: 100%;	
+}	
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+nav ul li{	
+    display: inline-block;	
+    padding: 0.5em 1em;	
+    border-radius: 5px;
+}
+.submenu .bi-caret-down-fill{
+    margin-left: 8px;
+}
+.bi-person-circle{
+    color:  #054405;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.nav li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 0.45em;
+    margin: 0;
+    border-radius: 5px;
+    color: black;
+}
+.nav li a:hover{
+    color: white;
+    background-color: #054405;
+}
+.nav li a:hover .bi-person-circle{
+    color: white;
+}
+.active{
+    color: white;
+    background-color: #054405;
+}
+.rate{
+    margin: 2em;
+    padding:2em;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    max-width: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.forms-container{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    max-width: 600x;
+}
+.default-container{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    max-width: 600x;
+    
+}
+.data-container{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    max-width: 600x;
+}
+.payment-container{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #C5D9C5;
+  
+    text-align: center;
+    min-width: 350px;
+    padding: 0;
+    padding-bottom:0 ;
+    margin-bottom: 0;
+    margin-left: 1em;
+
+    
+   
+    
+    
+}
+.payment-container .default-container{
+    padding: 1em;
+    width: 100%;
+    margin:auto 0;
+    max-width: 400x;
+
+    min-height: 610px;
+    max-height: 605px;
+   
+    
+  
+}
+
+
+.subtitle{
+    background-color: #054405;
+    padding: 1em ;
+
+}
+.send-data{
+    background-color: #C5D9C5;
+    padding: 0.5em;
+    margin: 0;
+    height: 100%;
+}
+.data-container .button-container {
+    display: inline-block;
+    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #054405;
+ }
+ .data-container .button-container button{
+     margin: 2em;
+     border-color: white;
+     background-color:#054405 ;
+     color: white;
+ }
+ 
+ .data-container label a{
+     text-decoration: none;
+     color: #054405;
+     font-size: 14px;
+     padding-top: 2em;
+     
+ }
+ .data-container label {
+    text-decoration: none;
+    color: #054405;
+    margin-top: 2em;
+    font-size: 14px;
+    
+}
+.data-container .button-container button label {
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+    font-size: 22px;
+    
+}
+.data-container p{
+    padding-top: 1em;
+}
+.data-container #email{
+    margin-bottom: 2em;
+}
+.default-container .button-container {
+    display: inline-block;
+    padding: 90px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #054405;
+ }
+ .default-container .button-container button  {
+     margin: 2em;
+     padding: 1em;
+     border-color: white;
+     background-color:#054405 ;
+     color: white;
+ }
+ 
+ .default-container .button-container  label a{
+     text-decoration: none;
+     color: white;
+     font-size: 14px;
+     
+ }
+ .default-container .button-container  label {
+    text-decoration: none;
+    color: white;
+    padding: 4em;
+    font-size: 14px;
+    
+}
+.default-container .button-container button label{
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+    font-size: 22px;
+    
+}
+.default-container p{
+    padding-top: 1em;
+}
+.entity-container{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    max-width: 600x;
+    
+}
+.entity-container p{
+    padding: 60px;
+    
+}
+.rate h1{
+    font-weight: bold;
+    color: #054405;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 60px;
+}
+.wrapper {
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper-table {
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.button-container{
+    text-align: center;
+}
+.footer {
+    color: black;
+    background-color: #C5D9C5;
+    text-align: center;
+    width: 100%;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: auto;
+}
+.footer-container{
+    display: flex;
+    padding:0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: auto;
+    overflow: auto;
+}
+.footer-container-section{
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+   
+    
+}
+.footer-container-logo{
+    margin: auto 2em;
+    padding: 8px 30px;    
+}
+.footer-container-section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-container-section ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.5em;
+    color: black;
+}
+.whatsapp-button {
+    display:block;
+    width:70px;
+    height:70px;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+.default-container input:not([type=checkbox]), 
+.data-container input{
+    margin-bottom: 3em;
+    margin-top: 3em;
+    width: 90%;
+    padding: 20px 20px;
+    border: 0;
+    border-bottom: 2px solid #054405;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+.form .button-container{
+    padding: 2em 8em;
+}
+.form .button-container button{
+    padding: 1em;
+}
+.form .button-container button{
+    font-weight: bold;
+    font-size: 18px;
+}
+/* .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+} */
+/* .form-control input{
+    border: 2px soid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+} */
+
+.form-control{
+    padding: 0;
+    margin: 0;
+}
+
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control input.error{
+    background-color: #fce4e4;
+    border: 2px solid #cc0033;
+    margin-bottom: 0;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-repeat {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+    padding: 0.0;
+    margin: 0;
+}
+#cbox-treatment-error-activo {
+	display: block;
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+    padding: 0.0;
+    margin: 0;
+}
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}

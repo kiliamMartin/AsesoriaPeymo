@@ -1,0 +1,16 @@
+[
+    {"id" : 1, "name" : "Kiliam", "apellido": "primero", "telf": "698-526-698", "email": "kiliam@gmail.com", "pass": "kiliam", "tipo": "1"},
+    {"id" : 2, "name" : "Ana", "apellido": "primero", "telf": "698-526-698", "email": "ana@gmail.com", "pass": "ana", "tipo": "1"},
+    {"id" : 3, "name" : "Eva", "apellido": "primero", "telf": "698-526-698", "email": "eva@gmail.com", "pass": "eva", "tipo": "1"},
+
+    {"id" : 4, "name" : "jefe", "apellido": "primero", "telf": "698-526-698", "email": "jefe@gmail.com", "pass": "jefe", "tipo": "2"},
+
+    {"id" : 6, "name" : "empleado1", "apellido": "primero segundo", "telf": "698-526-698", "email": "empleado1@gmail.com", "pass": "empleado1", "tipo": "3"},
+    {"id" : 6, "name" : "empleado2", "apellido": "primero segundo", "telf": "698-526-698", "email": "empleado2@gmail.com", "pass": "empleado2", "tipo": "3"},
+
+    {"id" : 7, "name" : "empresa1", "apellido": "primero", "telf": "698-526-698", "nameCompany": "Nombre de la empresa", "address": "Dirección de la empresa", "email": "empresa1@gmail.com", "pass": "empresa1", "tipo": "4"},
+    {"id" : 8, "name" : "empresa2", "apellido": "primero segundo", "telf": "698-526-698", "nameCompany": "Nombre de la empresa", "address": "Dirección de la empresa", "email": "empresa2@gmail.com", "pass": "empresa2", "tipo": "4"},
+
+    {"id" : 9, "name" : "particular1", "apellido": "primero segundo", "telf": "698-526-698", "email": "particular1@gmail.com", "pass": "particular1", "tipo": "5"},
+    {"id" : 10, "name" : "particular2", "apellido": "primero",  "telf": "698-526-698", "email": "particular2@gmail.com", "pass": "particular2", "tipo": "5"}
+]

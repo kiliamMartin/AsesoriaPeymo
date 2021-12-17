@@ -1,0 +1,13 @@
+[
+    {"id" : 1, "name" : "Documento", "formato" : "PDF", "nameUser": "particular1", "idUser": "9", "bill": ""},
+    {"id" : 2, "name" : "Facturas", "formato" : "PDF", "nameUser": "particular1", "idUser": "9", "bill": "Factura"},
+    {"id" : 3, "name" : "Fracturas_renta", "formato" : "PDF", "nameUser": "particular1", "idUser": "9", "bill": "Factura"},
+
+    {"id" : 4, "name" : "Documento", "formato" : "PDF", "nameUser": "particular2", "idUser": "10", "bill": ""},
+    {"id" : 5, "name" : "Facturas", "formato" : "PDF", "nameUser": "particular2", "idUser": "10", "bill": "Factura"},
+    {"id" : 6, "name" : "Fracturas_renta", "formato" : "PDF", "nameUser": "particular2", "idUser": "10", "bill": "Factura"},
+
+    {"id" : 7, "name" : "Documento", "formato" : "PDF", "nameUser": "empresa1", "idUser": "7", "bill": ""},
+    {"id" : 8, "name" : "Facturas", "formato" : "PDF", "nameUser": "empresa1", "idUser": "7", "bill": "Factura"},
+    {"id" : 9, "name" : "Fracturas_renta", "formato" : "PDF", "nameUser": "empresa1", "idUser": "7", "bill": "Factura"}
+]
