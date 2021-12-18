@@ -1,7 +1,6 @@
 class User < ApplicationRecord
   belongs_to :role
-
-  
+  has_secure_password
   validates :name, presence: true, confirmation:true
   validates :surname, presence: true, confirmation:true
   validates :password, presence: true, confirmation:true

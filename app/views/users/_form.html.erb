@@ -47,14 +47,18 @@
   </div>
 
   <div class="field">
-    Type <br>
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    Role <br>
     <select name="user[role_id]">
     <% Role.all.each do |u| %>
       <option value="<%=u.id%>"> <%= u.nameRole %> </option>
       <%end%>
     </select>
   </div>
- 
 
   <div class="actions">
     <%= form.submit %>

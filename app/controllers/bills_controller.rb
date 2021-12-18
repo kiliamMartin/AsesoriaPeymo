@@ -4,6 +4,9 @@ class BillsController < ApplicationController
   # GET /bills or /bills.json
   def index
     @bills = Bill.all
+    if @bills.blank?
+       ActiveRecord::Base.connection.reset_pk_sequence!('bills')
+    end
   end
 
   # GET /bills/1 or /bills/1.json

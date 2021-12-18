@@ -31,13 +31,13 @@
 </p>
 
 <p>
-  <strong>Password:</strong>
-  <%= @user.password %>
+  <strong>Role:</strong>
+  <%= @user.role_id %>
 </p>
 
 <p>
-  <strong>Type:</strong>
-  <%= @user.role_id %>
+  <strong>Password:</strong>
+  <%= @user.password_digest %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

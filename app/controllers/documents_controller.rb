@@ -4,6 +4,9 @@ class DocumentsController < ApplicationController
   # GET /documents or /documents.json
   def index
     @documents = Document.all
+    if @documents.blank?
+      ActiveRecord::Base.connection.reset_pk_sequence!('documents')
+   end
   end
 
   # GET /documents/1 or /documents/1.json

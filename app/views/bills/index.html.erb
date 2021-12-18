@@ -5,9 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Client</th>
-      <th>Name bill</th>
-      <th>Employee</th>
+      <th>Bill_id</th>
+      <th>Client_id</th>
+      <th>Name_bill</th>
+      <th>Employee_id</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,6 +16,7 @@
   <tbody>
     <% @bills.each do |bill| %>
       <tr>
+        <td><%= bill.id %></td>
         <td><%= bill.client_id %></td>
         <td><%= bill.name_bill %></td>
         <td><%= bill.employee_id %></td>

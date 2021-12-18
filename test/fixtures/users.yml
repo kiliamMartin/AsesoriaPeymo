@@ -7,8 +7,8 @@ one:
   nameCompany: MyString
   address: MyString
   email: MyString
-  password: MyString
-  type: one
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  role_id: one
 
 two:
   name: MyString
@@ -17,5 +17,5 @@ two:
   nameCompany: MyString
   address: MyString
   email: MyString
-  password: MyString
-  type: two
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  role_id: two

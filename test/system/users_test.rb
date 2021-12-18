@@ -18,10 +18,11 @@ class UsersTest < ApplicationSystemTestCase
     fill_in "Email", with: @user.email
     fill_in "Name", with: @user.name
     fill_in "Namecompany", with: @user.nameCompany
-    fill_in "Password", with: @user.password
+    fill_in "Password", with: 'secret'
+    fill_in "Password confirmation", with: 'secret'
     fill_in "Phone", with: @user.phone
+    fill_in "Role id", with: @user.role_id_id
     fill_in "Surname", with: @user.surname
-    fill_in "Type", with: @user.type_id
     click_on "Create User"
 
     assert_text "User was successfully created"
@@ -36,10 +37,11 @@ class UsersTest < ApplicationSystemTestCase
     fill_in "Email", with: @user.email
     fill_in "Name", with: @user.name
     fill_in "Namecompany", with: @user.nameCompany
-    fill_in "Password", with: @user.password
+    fill_in "Password", with: 'secret'
+    fill_in "Password confirmation", with: 'secret'
     fill_in "Phone", with: @user.phone
+    fill_in "Role id", with: @user.role_id_id
     fill_in "Surname", with: @user.surname
-    fill_in "Type", with: @user.type_id
     click_on "Update User"
 
     assert_text "User was successfully updated"

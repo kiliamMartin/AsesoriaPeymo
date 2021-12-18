@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @users = User.all
-   
+    if @users.blank?
+      ActiveRecord::Base.connection.reset_pk_sequence!('users')
+   end
   end
 
   # GET /users/1 or /users/1.json
@@ -23,7 +25,7 @@ class UsersController < ApplicationController
   # POST /users or /users.json
   def create
     @user = User.new(user_params)
-    
+
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: "User was successfully created." }
@@ -65,6 +67,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :surname, :phone, :nameCompany, :address, :email, :password, :role_id)
+      params.require(:user).permit(:name, :surname, :phone, :nameCompany, :address, :email, :password, :password_confirmation, :role_id)
     end
 end
