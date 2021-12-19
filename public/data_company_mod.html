@@ -27,37 +27,76 @@
             <div class="whatsapp-button">
                 <a href="#" ><img id="whatsapp-icon" src="assets/images/whatsapp.png"></a>
             </div>
-            <section id="data">
-                <div class="modify-data">
-                        <div class="data-container">
-                            <p id="title"><b>Modificar datos</b><br>
-                                <input type="text" placeholder="Nombre de la persona de contacto*" name="username" id="username" /><br>
-                                <input type="text" placeholder="Apellidos de la persona de contacto*" name="surname" id="surname" /><br>
-                                <input type="text" placeholder="Teléfono*" name="phone" id="phone"/><br>
-                                <input type="text" placeholder="Nombre de la empresa*" name="company_name" id="company_name"/><br>
-                                <input type="text" placeholder="Dirección*" name="address" id="address"/><br>
-                                <input type="email" placeholder="Email*" name="email" id="email" /><br>
-                            
-                                <label>¿Desea modificar su contraseña? <b><a href="#">Modifíquela aquí</a></b></label>
 
-                                <div class="button-container">
-                                    <button type="button"><label>CONFIRMAR MODIFICACIÓN</label></button><br>
+            <section id="forms">
+                <div class="wrapper">
+                    <div class="default-container">
+                        <p id="title"> <b>Modificar datos</b></p>
+                        <form id="form" class="form form-company">
+
+                            <div class="form-control">
+                                <div id="group__name">
+                                    <input type="text" placeholder="Nombre de la persona de contacto*" name="username" id="username" />
+                                    <p class="formulario__input-error">El nombre debe tener una longitud comprendida entre 2 y 60 caracteres</p>
                                 </div>
-                        </div>
-                </div>
+                                
+                            </div>
+
+                            <div class="form-control">
+                                <div id="group__surname">
+                                    <input type="text" placeholder="Apellidos de la persona de contacto*" name="surname" id="surname" />
+                                    <p class="formulario__input-error">El campo no puede quedar vacío.</p>
+                                </div>
+                               
+                            </div>
+
+                            <div class="form-control">
+                                <div id="group__phone">
+                                    <input type="text" placeholder="Teléfono*" name="phone" id="phone"/>
+                                    <p class="formulario__input-error">Debe introducir 9 dígitos </p>
+                                    
+                                </div>
+                             
+                            </div>
+
+                            <div class="form-control">
+                                <div id="group__company_name">
+                                    <input type="text" placeholder="Nombre de la empresa*" name="company_name" id="company_name"/>
+                                    <p class="formulario__input-error">El nombre debe tener una longitud comprendida entre 2 y 60 caracteres</p>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="form-control">
+                                <div id="group__address">
+                                    <input type="text" placeholder="Dirección*" name="address" id="address"/>
+                                    <p class="formulario__input-error">El campo no puede quedar vacío.</p>
+                                </div>
+                            </div>
+
+                            <div class="form-control">
+                                <div id="group__email">
+                                    <input type="email" placeholder="Email*" name="email" id="email" />
+                                    <p class="formulario__input-error">El formato del email no es  válido</p>
+                                    <p class="formulario__input-error-repeat">Este nombre de correo ya existe</p>
+                                </div>
+                                
+                            </div>
+
+                            <label>¿Desea modificar su contraseña? <b><a href="#">Modifíquela aquí</a></b></label>
+
+                            <div class="button-container">
+                                <button>CONFIRMAR MODIFICACIÓN</button><br>
+                            </div>
+                        </form> 
+                    </div>    
+                </div>   
             </section>  
         </main>
 
-    <footer class="footer"></footer>
+        <script src="assets/js/form_validation.js"></script>
 
+        <footer class="footer"></footer>
 
-
-
-       
- 
-            
-    
-
-
-</body>
+    </body>
 </html>
