@@ -110,6 +110,34 @@ button p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+div#div_file{
+    position: relative;
+    margin: 50px;
+    padding: 10px;
+    width: 150px;
+    background-color: #054405;
+}
+
+input#subir_documentacion{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+p#texto{
+    color: white;
+    text-align: center;
+}
+
+
+
+
 /* HOVER */
 button label:hover {
     cursor: pointer;

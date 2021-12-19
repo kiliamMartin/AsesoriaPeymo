@@ -9,5 +9,5 @@ function onRequestHandler(){
 }
 
 xhr.addEventListener("load", onRequestHandler);
-xhr.open('GET', `${API_URL}/users`);
+xhr.open('GET', `${API_URL}/users.json`);
 xhr.send();
