@@ -32,7 +32,7 @@ function companyRegister(){
             "email":`${email.value}`,
             "password":`${password.value}`,
             "password_confirmation":`${password2.value}`,
-            "role_id":5
+            "role_id":4
             
         }
     })
