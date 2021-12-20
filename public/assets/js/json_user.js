@@ -1,3 +1,4 @@
+/*
 var boton = document.getElementById('btn_js');
 
 boton.onclick = function() {
@@ -30,3 +31,4 @@ boton.onclick = function() {
     }) // watch info
 }
 
+*/
