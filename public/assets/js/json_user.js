@@ -85,7 +85,7 @@ boton.onclick = function() {
     xhr.addEventListener("load", onRequestHandler);
     xhr.open('GET', `${API_URL}/users.json`);
     xhr.send();
-    */
+    
 }
 
 */
