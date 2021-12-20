@@ -111,31 +111,6 @@ button p {
     font-weight: bold;
 }
 
-div#div_file{
-    position: relative;
-    background-color: white;
-    color: #054405;
-    border-color: #054405;
-    padding: 10px 10px;
-    border-style: solid; 
-}
-
-input#subir_documentacion{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-p#texto{
-    color: white;
-    text-align: center;
-}
-
 
 
 
