@@ -35,13 +35,16 @@
 
             <div class="container-bis">
                 <br>
-                <button onclick="location.href='bills.html'" class="left" type="button"><label id="little" class="left">VOLVER</label></button>
+                <button onclick="location.href='mybills.html'" class="left" type="button"><label id="little" class="left">VOLVER</label></button>
                 <div class="wrapper">
                     <p id="title" class="center">Modificar <b>Documentación</b></p>
                 </div>
                 
+                <div id="div_file">
+                    <p id="texto">SUBIR DOCUMENTACION</p>
+                    <input type="file" id="subir_documentacion" name="documentos_subidos" accept=".pdf, .zip, .tar" onchange="return addDocument();">
+                </div>
                 
-                <button type="button" onclick="addDocumentModify()"><label>SUBIR DOCUMENTACIÓN</label></button> 
                 <br>
                 <br>
                 <div style="overflow-x:auto;">
@@ -52,9 +55,7 @@
                             <th>Reemplazar</th>
                         </tr>
 
-                        <tbody>
-
-                        </tbody>
+                        <tbody id="documentos_pdf"></tbody>
 
                     </table>
                 </div>

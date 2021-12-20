@@ -11,6 +11,11 @@
     </div>
   <% end %>
 
+  <% @user.each do |user| %>
+    email:<%= user[:email] %>
+    password:<%= user[:password_digest] %>
+  <% end %>
+
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
@@ -63,4 +68,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>

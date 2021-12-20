@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/media.css">
@@ -33,10 +34,18 @@
 
             <div class="container">
                 <br>
-                <button onclick="location.href='bills.html'" class="left" type="button"><label id="little" class="left">VOLVER</label></button>
+                <button onclick="location.href='mybills.html'" class="left" type="button"><label id="little" class="left">VOLVER</label></button>
                 <p class="center" id="title">Subir <b>Documentación</b></p>
 
-                <button type="button" onclick="addDocument()"><label>SUBIR DOCUMENTACIÓN</label></button> 
+
+
+                <div id="div_file">
+                    <p id="texto">SUBIR DOCUMENTACION</p>
+                    <input type="file" id="subir_documentacion" name="documentos_subidos" accept=".pdf, .zip, .tar" onchange="return addDocument();">
+                </div>
+
+
+                
                 <br>
                 <br>
                 <div style="overflow-x: auto;">
@@ -47,7 +56,7 @@
                             <th>Reemplazar</th>
                         </tr>
 
-                        <tbody></tbody>
+                        <tbody id="documentos_pdf"></tbody>
 
                         
                     </table>

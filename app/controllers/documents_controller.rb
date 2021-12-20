@@ -1,6 +1,9 @@
 class DocumentsController < ApplicationController
   before_action :set_document, only: %i[ show edit update destroy ]
 
+  protect_from_forgery
+  skip_before_action :verify_authenticity_token
+
   # GET /documents or /documents.json
   def index
     @documents = Document.all
@@ -52,6 +55,7 @@ class DocumentsController < ApplicationController
 
   # DELETE /documents/1 or /documents/1.json
   def destroy
+    #@document = Document.find(params[:id])
     @document.destroy
     respond_to do |format|
       format.html { redirect_to documents_url, notice: "Document was successfully destroyed." }

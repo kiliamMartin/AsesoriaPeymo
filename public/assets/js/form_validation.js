@@ -160,6 +160,23 @@ form.addEventListener('submit', e => {
 
 
 	if(checkForm(campos.name, campos.surname, campos.company_name, campos.address, campos.password, campos[email], campos.phone, privacity, treatment)){
+		
+		function ajax() {
+			const http = new XMLHttpRequest();
+			const url = 'http://localhost:3000/rates.html';
+
+			httpd.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					ddocument.getElementById("btn_js").innerHTML = this.responseText;
+				}
+			}
+
+			http.open("GET", url);
+			http.send();
+		}
+		
+		ajax();
+
 		alert("Registro correcto")
 		form.reset();
 	}

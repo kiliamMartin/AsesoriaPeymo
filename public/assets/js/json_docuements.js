@@ -1,86 +1,92 @@
-var table = document.querySelector('#list_document tbody');
-var tableAdd = document.querySelector('#list_add_document tbody');
-
-var addDocId = 1;
-var docId = 4;
 
 watchDocument();
+const id_user = 1;
 
 function watchDocument() {
-    fetch('assets/json/documents.json')
 
-    .then(respuesta => respuesta.json()) // format info
-    .then(documents => {
+    let url = 'http://localhost:3000/documents.json';
 
-        documents.forEach(doc => {
-
-
-            if (`${doc.idUser}` == 7) {
-                const row = document.createElement('tr');
-                row.innerHTML += `
-                <td onclick="documentDeleteModify(${doc.id})"><img src="assets/images/papelera.png"></a></td>
-                <td>${doc.name}</td>
-                <td><button id="button_table"><label>REEMPLAZAR DOCUMENTACIÓN</label></button></td>
-                `;
     
-                table.appendChild(row);
+
+    const api = new XMLHttpRequest();
+    api.open('GET', url, true);
+    api.send();
+
+    api.onreadystatechange = function() {
+
+        if (this.status == 200 && this.readyState == 4) {
+
+            let dates = JSON.parse(this.responseText);
+            console.log(dates);
+
+            for (let item of dates) {
+                if (`${item.client_id}` == id_user) {
+
+                    let row = document.querySelector('#documentos_pdf');
+                    row.innerHTML += `
+                    <tr>
+                    <td onclick="documentDelete(${item.id})"><img src="assets/images/papelera.png"></a></td>
+                    <td>${item.name_doc}</td>
+                    <td><button id="button_table"><label>REEMPLAZAR DOCUMENTACIÓN</label></button></td>
+                    </tr>
+                    `;
+                }
             }
-            
-           
-        });
 
-    }) // watch info
+        }
 
-    
-}
-
-
-
-function documentDeleteModify(documentId) {
-    // sabemos que no es correcto, pero cambiar el método de eliminación 
-    // para que eliminase los elementos según los índices de la tabla sería 
-    // complicarse la vida, y absurdo para el próximo sprint.
-    table.deleteRow(documentId);
+    }    
 }
 
 
 
 function documentDelete(documentId) {
-    // sabemos que no es correcto, pero cambiar el método de eliminación 
-    // para que eliminase los elementos según los índices de la tabla sería 
-    // complicarse la vida, y absurdo para el próximo sprint.
-    tableAdd.deleteRow(documentId);
+    let url = `http://localhost:3000/documents/${documentId}.json`;
+
+    const api = new XMLHttpRequest();
+    api.open('DELETE', url, true);
+    api.send();
+    
+
+    api.onreadystatechange = function() {
+        location.reload();
+    }   
 }
 
+function addDocument(){
+    const input = document.getElementById('subir_documentacion');
+    if(input.files && input.files[0]) {
+        console.log("File Seleccionado : ", input.files[0]);
 
+        $.ajax({
+            type: "POST",
+            url: `http://localhost:3000/documents`,
+            data: {
+                document: {client_id: `${id_user}`, name_doc: `${input.files[0].name}`}
+            },
+            success(data) {
+                alert(data.id);
+                
+                return false;
+            },
+            error(data) {
+                return false
+            }
+        });
 
-function addDocumentModify() {
+        let url = `http://localhost:3000/documents/`;
 
-    const row = document.createElement('tr');
-            row.innerHTML += `
-            <td onclick="documentDeleteModify(${docId})"><img src="assets/images/papelera.png"></a></td>
-            <td>Nuevo_documento_${docId}</td>
-            <td><button id="button_table"><label>REEMPLAZAR DOCUMENTACIÓN</label></button></td>
-            `;
+        const api = new XMLHttpRequest();
+        api.open('GET', url, true);
+        api.send();
+        
+    
+        api.onreadystatechange = function() {
+            location.reload();
+        }
 
-    table.appendChild(row);
-
-    docId++;
-
+    }
+        
+    
+    
 }
-
-function addDocument() {
-
-    const row = document.createElement('tr');
-            row.innerHTML += `
-            <td onclick="documentDelete(${addDocId})"><img src="assets/images/papelera.png"></a></td>
-            <td>Nuevo_documento_${addDocId}</td>
-            <td><button id="button_table"><label>REEMPLAZAR DOCUMENTACIÓN</label></button></td>
-            `;
-
-    tableAdd.appendChild(row);
-
-    addDocId++;
-
-}
-
